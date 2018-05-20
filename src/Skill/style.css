@@ -1,0 +1,67 @@
+@keyframes to-right {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100vw);
+    }
+}
+@keyframes out-pick {
+     from,20%,to{
+         transform: scale(1);
+     }
+     50%{
+         transform: scale(0.95);
+     }
+ }
+@keyframes out-cut {
+    from,50%,to{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+}
+@keyframes out-jump{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(100%);
+    }
+}
+.animate-pick{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.animate-cut{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.animate-jump{
+    position: absolute;
+    left:0;
+    top:20%;
+    animation: to-right 1s linear;
+}
+
+.game-area{
+    transition: transform 300ms;
+}
+
+.game-area.skill-pick{
+    animation: out-pick 0.3s 0.2s;
+}
+.game-area.skill-cut{
+    animation: out-cut 0.3s 0.2s;
+}
+.game-area.skill-jump{
+    animation: out-jump 1s linear;
+}

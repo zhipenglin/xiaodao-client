@@ -1,0 +1,99 @@
+@keyframes loading {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+.loading{
+    position: absolute;
+    background: #01bbba;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation: loading 500ms 2500ms;
+    overflow: hidden;
+}
+
+.loading__left,.loading__right{
+    position: absolute;
+    font-family:"iconfont" !important;
+    font-size:120px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    color:#fff;
+    top:50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+}
+.loading__left:before,.loading__left:after,.loading__right:before,.loading__right:after{
+    position: absolute;
+}
+
+@keyframes left {
+    from,to{
+        left:0;
+    }
+    30%,70%{
+        left:50%;
+    }
+}
+@keyframes right {
+    from,to{
+        left:100%;
+    }
+    30%,70%{
+        left:50%;
+    }
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.loading__left{
+    transform: translate(-100%,-50%);
+    animation: left 2500ms forwards;
+}
+.loading__left:before{
+    content:'\e62b';
+    animation: hide 1ms 1000ms forwards;
+}
+.loading__left:after{
+    opacity: 0;
+    content:'\e62e';
+    animation: show 1ms 1000ms forwards;
+}
+
+.loading__right{
+    transform: translate(0%,-50%);
+    animation: right 2500ms forwards;
+}
+
+.loading__right:before{
+    content:'\e62c';
+    animation: hide 1ms 1000ms forwards;
+}
+
+.loading__right:after{
+    opacity: 0;
+    content:'\e62d';
+    animation: show 1ms 1000ms forwards;
+}

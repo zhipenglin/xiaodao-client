@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'amfe-flexible';
-import SingleGame from './SingleGame'
+import initReactFastclick from 'react-fastclick';
+initReactFastclick();
 
-ReactDOM.render(<SingleGame />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();

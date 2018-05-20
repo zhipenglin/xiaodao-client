@@ -3,9 +3,47 @@
 }
 
 .home__header{
+    height: 420px;
+    background: #01bbba;
+    position: relative;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+}
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.home__logo{
+    animation: show 4s;
+}
+.home__logo:after{
+    content:'';
+    display: block;
+    background: url('./logo.svg') 100% / 100%;
+    width: 480px;
+    height: 384px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
 
+.home__body{
+    margin-top: 200px;
 }
 
 .home__button{
-
+    font-size: 34px;
+    display: block;
+    background-color: #01bbba;
+    color:#fff;
+    border:none;
+    border-radius: 50px;
+    height: 100px;
+    width: 420px;
+    margin: 40px auto;
+    outline:none;
 }

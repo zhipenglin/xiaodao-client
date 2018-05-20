@@ -1,0 +1,96 @@
+.game-header{
+    height: 200px;
+    background: #373737;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color:#fff;
+}
+
+.game-header__avatar{
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background: url("./default-avatar.jpg") 100% / 100%;
+    border: 10px solid #01bbba;
+}
+
+.game-header__info{
+    margin: 0 20px;
+}
+
+.game-header__blood{
+    color: #ff60a8;
+}
+
+.game-header__blood i{
+    margin-right: 10px;
+}
+
+.game-header__nickname{
+    font-size: 34px;
+}
+
+.game-time{
+    background: #ff60a8;
+    height: 30px;
+}
+
+.game-time__inner{
+    background: #1bbbba;
+    height: 100%;
+    transition: width 1s linear;
+}
+
+.game-title{
+    padding: 30px;
+    height: 200px;
+    font-size: 34px;
+}
+
+.game-options__item{
+    background: #01bbba;
+    height: 80px;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 20px;
+    color:#fff;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    padding: 0 40px 0 40px;
+}
+
+.game-options__icon{
+    background: #ff60a8;
+    width: 60px;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.game-tools{
+    width: 100%;
+    height: 100px;
+    background: #373737;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    color:#fff;
+}
+
+.game-tools__icon{
+    font-size: 50px;
+}
+
+.game-tools__item{
+    flex: 1;
+    text-align: center;
+    padding-top: 6px;
+}
