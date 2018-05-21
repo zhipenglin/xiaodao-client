@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Home from './Home'
 import SingleGame from './SingleGame'
+import axios from 'axios'
 import './App.css'
 
 const pageMap=(name)=>{
@@ -17,6 +18,9 @@ class App extends Component {
             currentPage:name
         });
     };
+    componentWillMount(){
+        axios.post('/login');
+    }
     render() {
         const Page=pageMap(this.state.currentPage);
         return (
