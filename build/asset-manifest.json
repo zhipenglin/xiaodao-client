@@ -1,0 +1,18 @@
+{
+  "main.css": "static/css/main.6505323a.css",
+  "main.css.map": "static/css/main.6505323a.css.map",
+  "main.js": "static/js/main.4e0a9815.js",
+  "main.js.map": "static/js/main.4e0a9815.js.map",
+  "static/media/bg_default.mp3": "static/media/bg_default.6fbe3f9f.mp3",
+  "static/media/cao.png": "static/media/cao.d17f9bf4.png",
+  "static/media/cut.wav": "static/media/cut.52741222.wav",
+  "static/media/death.wav": "static/media/death.9a499079.wav",
+  "static/media/futou.png": "static/media/futou.49aa6e37.png",
+  "static/media/jian.png": "static/media/jian.2280cd26.png",
+  "static/media/jump.mp3": "static/media/jump.3eb62b2e.mp3",
+  "static/media/logo.svg": "static/media/logo.04448add.svg",
+  "static/media/msg.wav": "static/media/msg.042076f9.wav",
+  "static/media/pick.wav": "static/media/pick.74dda106.wav",
+  "static/media/right.mp3": "static/media/right.8267a74e.mp3",
+  "static/media/wrong.wav": "static/media/wrong.4c0b5bfd.wav"
+}
